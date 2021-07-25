@@ -1,0 +1,108 @@
+@import 'variable';
+@import 'grid'
+
+header
+    width: 100%
+    background-color: $primary
+    color: $color-white
+    @include iphone()
+        flex-wrap: wrap
+
+
+.footer
+    width: 100%
+    background-color: $primary
+    color: $color-white
+    padding-top: 32px
+    padding-bottom: 40px
+    .footerList
+        @include pad-min()
+            ul:nth-child(1)
+                order: 3
+            ul:nth-child(2)
+                order: 2
+            ul:nth-child(3)
+                order: 1
+
+            
+
+.footer-icon
+    img
+        display: block
+    @include pad()
+        height: 24px
+        width: 24px
+
+.nav-item
+    margin-left: 64px
+    font-style: 20px
+    @include pad() 
+        margin-left: 40px
+    @include iphone()
+        width: calc(50% - 2px)
+        margin-left: 0
+        text-align: center
+        padding-top: 8px
+        padding-bottom: 8px
+        border: 1px solid white
+
+
+
+.nav
+    @include iphone()
+        width: 100%
+        
+
+.brand
+    width: 80px
+    margin: 30px 0
+    @include iphone()
+        width: calc(100% - 2px)
+        text-align: center
+        padding: 10px 0
+        margin: 0
+        border: 1px solid white
+        img
+            width: 48px
+
+.nav-item-sm
+    margin-right: 48px
+    font-style: 16px
+    @include pad()
+        margin-right: 40px
+    // @include pad-min()
+    //     display: none
+
+
+.infoList
+    font-size: 36px
+    margin-top: 42px
+    @include pad()
+        font-size: 20px
+    @include iphone()
+        font-size: 16px
+        margin-top: 0
+    img
+        display: inline-block
+        margin-right: 22px
+        width: 40px
+        @include pad()
+            width: 18px
+            margin-right: 11px
+        @include iphone()
+            width: 15px
+            margin-right: 6px
+
+
+ul.sum
+    @include pad-min()
+        display: none
+
+.w-100-sm
+    @include iphone()
+        width: 100%
+
+ul.vaList
+    @include iphone()
+        li
+            margin-top: 16px

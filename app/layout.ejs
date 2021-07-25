@@ -11,13 +11,53 @@
 
 <body>
   <header class="header">
-    這是 header
+    <div class="container-full d-flex flex-between align-item-center h-100">
+      <div class="brand">
+        <img  src="assets/images/logo-new.png" alt="">
+      </div>
+      <div class="nav">
+        <ul class="d-flex flex-between">
+          <li class="nav-item">系列鏡框</li>
+          <li class="nav-item">門市據點</li>
+          <li class="nav-item">部落格</li>
+          <li class="nav-item">常見問題</li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
+  <footer class="footer ">
+    <div class="container">
+      <div class="d-flex flex-between footerList border-b">
+        <ul class="d-flex flex-between align-item-center sum">
+          <li class="nav-item-sm">首頁</li>
+          <li class="nav-item-sm">系列鏡框</li>
+          <li class="nav-item-sm">門市據點</li>
+          <li class="nav-item-sm">部落格</li>
+          <li class="nav-item-sm">常見問題</li>
+        </ul>
+        <ul class="d-flex flex-between">
+          <li class="footer-icon"><img src="assets/images/ic_social_fb.svg" alt=""></li>
+          <li class="ml-2 footer-icon"><img src="assets/images/ic_social_ig.svg" alt=""></li>
+          <li class="ml-2 footer-icon"><img src="assets/images/ic_social_line.svg" alt=""></li>
+        </ul>
+        <ul class="infoList ">
+          <li><img src="assets/images/ic_phone_48px.svg" alt="">0800-000-000</li>
+          <li class="mt-1 mb-3"><img src="assets/images/ic_mail_outline_24px.svg" alt="">glasses@business.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="d-flex flex-between mt-3 ">
+        <p >Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="d-flex flex-between vaList">
+          <li class="w-100-sm">隱私權政策</li>
+          <li class="ml-3-sm w-100-sm">服務條款</li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>

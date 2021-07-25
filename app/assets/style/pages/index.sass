@@ -1,0 +1,191 @@
+@import '../variable';
+@import '../grid'
+
+.h3
+  font-weight: 600
+
+.order-1
+  order: 1
+  @include pad()
+    order: 2
+
+.order-2
+  order: 2
+  @include pad()
+    order: 1
+
+.banner
+    color: $color
+    display: block
+    width: 100%
+    height: 100vh
+    background-image: url('../../assets/images/banner.png')
+    background-repeat: no-repeat
+    background-size: cover
+    .h2
+      font-weight: 600
+    @include iphone()
+      background-image: url('../../assets/images/68.png')
+
+
+.classic
+  color: $color
+  font-weight: 600
+  padding-top: 40px
+  padding-bottom: 56px
+
+.topic
+  width: 100%
+  margin-bottom: 32px
+  display: flex
+  @include pad()
+    margin-bottom: 8px
+  @include iphone()
+    position: relative
+
+.topic_img
+  width: 60%
+  margin: 0
+  @include iphone()
+    width: 100%
+
+.topic_content
+  color: $primary
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 46px
+  font-style: italic
+  width: 40%
+  img
+    display: inline-block
+    width: 44px
+  @include desktop-top()
+    font-size: 28px
+    img
+      width: 36px
+  @include iphone()
+    position: absolute
+    top: 0
+    left: 0
+
+    width: 100%
+    height: 100%
+
+
+.content
+  color: $color
+  background-color: #AA06010D
+  width: 100%
+  padding-top: 32px
+  padding-bottom: 40px
+
+  @include iphone()
+    padding: 32px auto 40px  auto 
+
+.content-card
+  width: 25%
+  @include pad()
+    width: 50%
+  @include iphone()
+    width: 100%
+
+.content-item
+  width: 100%
+  img
+    margin: 16px auto
+    width: 84px
+    height: 84px
+    display: block
+  p 
+    padding: 16px 20px
+    @include iphone()
+      max-width: 255px
+
+.form
+  background-color: #AA06010D
+  padding-top: 60px
+  padding-bottom: 96px
+  p 
+    line-height: 1.5
+  @include iphone()
+    padding-top: 30px
+    padding-bottom: 40px
+
+form
+  width: 80%
+  @include pad()
+    width: 100%
+
+.customer
+  margin: 32px auto
+
+
+
+.card
+  color: black
+  border-radius: 4px
+  box-shadow: 0px 2px 6px #00000029
+  border: 1px solid #DEE2E6
+  width: calc(25% - 32px)
+  margin: auto 15px
+  @include pad()
+    width: calc(50% - 32px)
+    margin-bottom: 16px
+  @include iphone()
+    width: 100%
+
+.card-img
+  width: 100%
+  height: 256px
+  overflow: hidden
+  img
+    width: 100%
+    height: auto
+
+.card-content
+  padding: 16px 24px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 172px
+  line-height: 2
+
+  .card-footer
+    color: #707070
+
+.coBrand
+  width: 100%
+  padding-top: 32px
+  padding-bottom: 32px
+  background-image: url('../../assets/images/bg.png')
+  background-repeat: no-repeat
+  background-size: cover
+  .h3
+    color: white
+
+.branded
+  width: calc(50% - 60px)
+  height: auto
+  position: relative
+  margin-right: 15px
+  margin-left: 15px
+  @include iphone()
+    width: 100%
+  .h2
+    font-size: 72px
+    font-weight: 600
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $primary
+    background-color: rgba(255,255,255,0.5)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    @include desktop-top()
+      font-size: 32px
+  img
+    width: 100%
