@@ -1,0 +1,71 @@
+@import '../variable';
+@import '../grid'
+
+
+.location_sel
+  width: 50%
+  @include iphone()
+    width: 100%
+
+label
+  width: 25%
+
+select
+  width: calc(75% - 12px)
+  margin-left: 12px
+  font-size: 14px
+  line-height: 1.2
+  padding: 8px 16px
+  text-align: left
+
+.location_main
+  margin-top: 20px
+  margin-bottom: 56px
+
+.location_card
+  width: 100%
+  margin-bottom: 16px
+
+
+
+  .location_img
+    width: 50%
+    @include iphone()
+      width: 100%
+
+    p 
+      padding: 8px 24px
+
+  .location_content
+    border: 1px solid #00000021
+    // width: 100%
+    width: calc(50% - 62px)
+    margin: 6px 30px
+    @include iphone()
+      width: 100%
+
+    p
+      border: 1px solid #00000021
+      padding: 8px 16px
+      line-height: 1.5
+    
+    ul
+      padding: 16px
+
+      li
+        width: 100%
+        font-size: 14px
+        line-height: 1.5
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+
+        img
+          fill: #000
+          width: 15px
+          margin-right: 10px
+.map
+  width: 100%
+  overflow: hidden
+  img
+    width: 100%

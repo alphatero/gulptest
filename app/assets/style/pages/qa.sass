@@ -1,0 +1,19 @@
+@import '../variable';
+@import '../grid'
+
+.qa_main
+  margin: 32px 0
+
+.qa_list
+  margin-top: 4px
+  margin-bottom: 160px
+  li
+    margin-bottom: 16px
+    p 
+      padding: 16px 95px
+      line-height: 1.5
+      @include pad()
+        padding-right: 0
+        padding-left: 60px
+      @include iphone()
+        padding-left: 0
